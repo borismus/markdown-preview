@@ -8,7 +8,7 @@
 	// Also inject a reference to the default stylesheet to make things look nicer.
 	var ss = document.createElement('link');
 	ss.rel = 'stylesheet';
-	ss.href = chrome.extension.getURL('markdown.css');
+	ss.href = localStorage['markdown_preview_css_file'] || chrome.extension.getURL('markdown.css');
 	document.head.appendChild(ss);
 
 }(document));

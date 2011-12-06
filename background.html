@@ -1,0 +1,12 @@
+<html>
+<script type="text/javascript" charset="utf-8">
+
+chrome.extension.onRequest.addListener(function(request,sender,response) {
+  if (request.option == "css_href")
+    sendResponse({ css_href : localStorage["markdown_preview_css_file"] });
+  else
+    sendResponse();
+});
+
+</script>
+</html>

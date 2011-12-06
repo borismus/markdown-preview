@@ -1,5 +1,4 @@
-(function(document) {
-
+(function(document,window) {
   // Onload, take the DOM of the page, get the markdown formatted text out and
 	// apply the converter.
 	var html = (new Showdown.converter()).makeHtml(document.body.innerText);
@@ -8,7 +7,10 @@
 	// Also inject a reference to the default stylesheet to make things look nicer.
 	var ss = document.createElement('link');
 	ss.rel = 'stylesheet';
-	ss.href = localStorage['markdown_preview_css_file'] || chrome.extension.getURL('markdown.css');
-	document.head.appendChild(ss);
+	ss.href = chrome.extension.getURL('markdown.css');
+  chrome.extension.sendRequest({ option : "css_href" }, function(response) {
+		ss.href = response.css_href;
+	  document.head.appendChild(ss);
+  });
 
-}(document));
+}(document,window));

@@ -20,9 +20,11 @@
       </form>
     </div>
     <script type='text/javascript'>
-        document.getElementById("css-file").value = localStorage["markdown_preview_css_file"];
+        document.getElementById("css-file").value =
+          localStorage["markdown_preview_css_file"];
         document.getElementById("settings-form").onsubmit = function() {
-          localStorage["markdown_preview_css_file"] = document.getElementById("css-file").value;
+          localStorage["markdown_preview_css_file"] =
+            document.getElementById("css-file").value;
           return false;
         };
     </script>

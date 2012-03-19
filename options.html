@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Settings - Markdown-preview</title>
+    <style type='text/css'>
+      body { font-size: 13px; font-family: Helvetica, FreeSans, Arial, sans-serif; }
+      #bucket { margin: 0 auto; width: 480px; }
+    </style>
+  </head>
+  <body>
+    <div id='bucket'>
+      <form id='settings-form'>
+        <h1>Settings for Markdown-preview</h1>
+        <p>
+          <label>CSS file <input type='text' id='css-file' name='css-file'/></label>
+        </p>
+        <p>
+          <input type='submit' value='Save' />
+        </p>
+      </form>
+    </div>
+    <script type='text/javascript'>
+        document.getElementById("css-file").value =
+          localStorage["markdown_preview_css_file"];
+        document.getElementById("settings-form").onsubmit = function() {
+          localStorage["markdown_preview_css_file"] =
+            document.getElementById("css-file").value;
+          return false;
+        };
+    </script>
+  </body>
+</html>

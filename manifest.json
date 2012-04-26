@@ -12,10 +12,13 @@
       "matches": [
         "http://*/*.md*"      , "file://*/*.md", 
         "http://*/*.markdown*", "file://*/*.markdown",
+        "http://*/*.mdown*", 	"file://*/*.mdown",
         "http://*/*.text"     , "file://*/*.text"
       ],
-      "js": ["showdown.js", "markdownify.js"]
+      "js": ["jquery.js", "showdown.js", "markdownify.js"]
     }
   ],
-  "permissions": ["tabs", "<all_urls>"]
+  "permissions": ["tabs", "<all_urls>"],
+  "background_page": "background.html",
+  "options_page": "options.html"
 }

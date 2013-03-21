@@ -7,6 +7,9 @@
     "48": "images/icon.png",
     "16": "images/icon.png"
   },
+  "web_accessible_resources": [
+    "markdown.css"
+  ],
   "content_scripts": [
     {
       "matches": [
@@ -18,5 +21,6 @@
       "js": ["showdown.js", "markdownify.js"]
     }
   ],
-  "permissions": ["tabs", "<all_urls>"]
+  "permissions": ["tabs", "<all_urls>"],
+  "manifest_version": 2
 }

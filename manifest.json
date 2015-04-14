@@ -11,6 +11,7 @@
     {
       "matches": [
         "http://*/*.md*"      , "file://*/*.md", 
+        "http://*/*.mdown*"   , "file://*/*.mdown", 
         "http://*/*.markdown*", "file://*/*.markdown",
         "http://*/*.text"     , "file://*/*.text"
       ],

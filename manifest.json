@@ -7,6 +7,10 @@
     "48": "images/icon.png",
     "16": "images/icon.png"
   },
+    "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
   "content_scripts": [
     {
       "matches": [
@@ -18,9 +22,10 @@
       "js": ["showdown.js", "markdownify.js"]
     }
   ],
-  "permissions": ["tabs", "<all_urls>"],
+  "permissions": ["tabs", "<all_urls>", "storage"],
   "manifest_version": 2,
   "web_accessible_resources": [
-    "markdown.css"
+    "themes/originalTheme.css",
+    "themes/cleanTheme.css"
   ]
 }

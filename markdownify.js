@@ -8,7 +8,14 @@
 	// Also inject a reference to the default stylesheet to make things look nicer.
 	var ss = document.createElement('link');
 	ss.rel = 'stylesheet';
-	ss.href = chrome.extension.getURL('markdown.css');
+
+ chrome.storage.sync.get({
+    currentTheme: 'originalTheme',
+  }, function(items) {
+    var themeName = "themes/" + items.currentTheme + ".css";
+     ss.href = chrome.extension.getURL(themeName);
+  });
+
 	document.head.appendChild(ss);
 
 }(document));

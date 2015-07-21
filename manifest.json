@@ -17,6 +17,8 @@
         "http://*/*.md*"      , "file://*/*.md", 
         "http://*/*.mdown*"   , "file://*/*.mdown", 
         "http://*/*.markdown*", "file://*/*.markdown",
+        "http://*/*.rmd*"     , "file://*/*.rmd",
+        "http://*/*.Rmd*"     , "file://*/*.Rmd",
         "http://*/*.text"     , "file://*/*.text"
       ],
       "js": ["showdown.js", "markdownify.js"]

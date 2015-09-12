@@ -1,7 +1,7 @@
 {
   "name": "Markdown Preview",
   "version": "0.6",
-  "description": "Converts and previews markdown files (.md, .markdown) to HTML right inside Chrome.",
+  "description": "Converts and previews Markdown files to HTML right inside Chrome.",
   "icons": {
     "128": "images/icon.png",
     "48": "images/icon.png",
@@ -17,7 +17,13 @@
         "http://*/*.md*"      , "file://*/*.md", 
         "http://*/*.mdown*"   , "file://*/*.mdown", 
         "http://*/*.markdown*", "file://*/*.markdown",
-        "http://*/*.text"     , "file://*/*.text"
+        "http://*/*.markdn*"  , "file://*/*.markdn",
+        "http://*/*.mdtext*"  , "file://*/*.mdtext",
+        "http://*/*.mdtxt*"   , "file://*/*.mdtxt",
+        "http://*/*.mdwn*"    , "file://*/*.mdwn",
+        "http://*/*.mkd*"     , "file://*/*.mkd",
+        "http://*/*.mkdn*"    , "file://*/*.mkdn",
+        "http://*/*.text*"    , "file://*/*.text"
       ],
       "js": ["showdown.js", "markdownify.js"]
     }

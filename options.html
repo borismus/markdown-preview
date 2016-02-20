@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Markdown Preview Options</title>
   <style>
-    body: { padding: 100px; }
+    body: {
+      padding: 100px;
+    }
+    #status {font-weight: bold; color: green}
   </style>
 </head>
 
 <body>
   Select theme:
   <select id="theme">
-   <option value="originalTheme">Original</option>
-   <option value="cleanTheme">Clean</option>
+    <option value="originalTheme">Original</option>
+    <option value="cleanTheme">Clean</option>
   </select>
-
+  <br>
+  <br>
   <div id="status"></div>
-  <button id="save">Save</button>
+
 
   <script src="options.js"></script>
 </body>
+
 </html>

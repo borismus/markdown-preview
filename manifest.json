@@ -14,16 +14,16 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*/*.md*"      , "file://*/*.md", 
-        "http://*/*.mdown*"   , "file://*/*.mdown", 
-        "http://*/*.markdown*", "file://*/*.markdown",
-        "http://*/*.markdn*"  , "file://*/*.markdn",
-        "http://*/*.mdtext*"  , "file://*/*.mdtext",
-        "http://*/*.mdtxt*"   , "file://*/*.mdtxt",
-        "http://*/*.mdwn*"    , "file://*/*.mdwn",
-        "http://*/*.mkd*"     , "file://*/*.mkd",
-        "http://*/*.mkdn*"    , "file://*/*.mkdn",
-        "http://*/*.text*"    , "file://*/*.text"
+        "*://*/*.md*"      , "*://*/*.md", 
+        "*://*/*.mdown*"   , "*://*/*.mdown", 
+        "*://*/*.markdown*", "*://*/*.markdown",
+        "*://*/*.markdn*"  , "*://*/*.markdn",
+        "*://*/*.mdtext*"  , "*://*/*.mdtext",
+        "*://*/*.mdtxt*"   , "*://*/*.mdtxt",
+        "*://*/*.mdwn*"    , "*://*/*.mdwn",
+        "*://*/*.mkd*"     , "*://*/*.mkd",
+        "*://*/*.mkdn*"    , "*://*/*.mkdn",
+        "*://*/*.text*"    , "*://*/*.text"
       ],
       "js": ["showdown.js", "markdownify.js"]
     }

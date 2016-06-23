@@ -1,6 +1,6 @@
 {
   "name": "Markdown Preview",
-  "version": "0.6",
+  "version": "0.7",
   "description": "Converts and previews Markdown files to HTML right inside Chrome.",
   "icons": {
     "128": "images/icon.png",
@@ -14,8 +14,8 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*/*.md*"      , "*://*/*.md", 
-        "*://*/*.mdown*"   , "*://*/*.mdown", 
+        "*://*/*.md*"      , "*://*/*.md",
+        "*://*/*.mdown*"   , "*://*/*.mdown",
         "*://*/*.markdown*", "*://*/*.markdown",
         "*://*/*.markdn*"  , "*://*/*.markdn",
         "*://*/*.mdtext*"  , "*://*/*.mdtext",
@@ -23,7 +23,17 @@
         "*://*/*.mdwn*"    , "*://*/*.mdwn",
         "*://*/*.mkd*"     , "*://*/*.mkd",
         "*://*/*.mkdn*"    , "*://*/*.mkdn",
-        "*://*/*.text*"    , "*://*/*.text"
+        "*://*/*.text*"    , "*://*/*.text",
+        "file:///*.md*"      , "file:///*.md",
+        "file:///*.mdown*"   , "file:///*.mdown",
+        "file:///*.markdown*", "file:///*.markdown",
+        "file:///*.markdn*"  , "file:///*.markdn",
+        "file:///*.mdtext*"  , "file:///*.mdtext",
+        "file:///*.mdtxt*"   , "file:///*.mdtxt",
+        "file:///*.mdwn*"    , "file:///*.mdwn",
+        "file:///*.mkd*"     , "file:///*.mkd",
+        "file:///*.mkdn*"    , "file:///*.mkdn",
+        "file:///*.text*"    , "file:///*.text"
       ],
       "js": ["showdown.js", "markdownify.js"]
     }
